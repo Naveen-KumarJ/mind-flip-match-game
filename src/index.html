@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen w-screen p-10">
+  <header class="font-bebas">
+    <div class="container bg-slate-100 rounded-4xl flex flex-col items-center sm:flex-row mx-auto sm:pt-4 sm:pb-4">
+      <div class="logo flex items-center ">
+        <h2 class="font-bebas lg:text-4xl sm:pl-8">Match Pair</h2>
+      </div>
+      <div class="sm:ml-auto sm:pr-8 lg:text-4xl text-slate-700 ">
+        <h1 id="title">Mind Flip: The Ultimate Match Game !</h1>
+      </div>
+    </div>
+  </header>
+  <main class="mt-5">
+    <div class="container bg-slate-800 mx-auto  p-3.5 flex flex-col justify-around items-center rounded-2xl gap-2.5">
+      <div class="flex flex-col items-center text-white w-full sm:justify-between sm:flex-row sm:px-10 font-bold">
+        <div class="uppercase">Attempts - <span class="font-light" id="attempts-span">0</span></div>
+        <div class="uppercase">Timer - <span class="font-light" id="timer-span">00:00:00</span></div>
+      </div>
+      <div class="game-container hidden bg-slate-200  grid-cols-4 sm:grid-cols-4 gap-2.5 p-4 rounded-2xl">
+      </div>
+      <div class="result-container hidden rounded-2xl bg-slate-200 w-full h-[50vh] flex-col sm:gap-3.5 justify-center items-center">
+        <h1 class="sm:text-6xl font-bold text-purple-800">You Won !</h1>
+        <h2 class="sm:text-4xl font-bebas font-semibold text-slate-800 sm:mt-4">Attempts Taken - <span id="attempt-result" class="text-indigo-600">87</span></h2>
+        <h2 class="sm:text-4xl font-bebas font-semibold text-slate-800">Time Taken - <span id="time-result" class="text-indigo-600">00:00:00</span></h2>
+      </div>
+      <div class="mt-3">
+        <button class="bg-green-400 px-12 py-2 font-bold text-xl uppercase rounded-xl cursor-pointer" id="start-btn">Start</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
